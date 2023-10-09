@@ -107,7 +107,7 @@ export class CrearDocenteComponent implements OnInit {
           error: (err) => {
             this.messageService.add({
               severity: 'Error',
-              summary: 'Error al guardar los datos',
+              summary: 'El docente ya se encuentra registrado',
               detail: ``,
             });
           },
