@@ -50,8 +50,8 @@ export class CrearDocenteComponent implements OnInit {
       tipoIdentificacionDocente: ['', Validators.required],
       nombreDocente: ['', Validators.required],
       apellidoDocente: ['', Validators.required],
-      correoElectronicoDocente: ['', Validators.required],
-      telefonoCelularDocente: ['', Validators.required],
+      correoElectronicoDocente: ['', [Validators.required, Validators.email, Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$')]],
+      telefonoCelularDocente: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
       numeroContratoDocente: ['', Validators.required],
       ciudadResidenciaDocente: ['', Validators.required],
       escalafonTecnicoDocente: ['', Validators.required],
@@ -107,7 +107,7 @@ export class CrearDocenteComponent implements OnInit {
           error: (err) => {
             this.messageService.add({
               severity: 'Error',
-              summary: 'El docente ya se encuentra registrado',
+              summary: 'Error al guardar los datos',
               detail: ``,
             });
           },

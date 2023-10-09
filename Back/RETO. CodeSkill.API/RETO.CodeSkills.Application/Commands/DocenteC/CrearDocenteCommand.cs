@@ -12,7 +12,7 @@ namespace RETO.CodeSkills.Application.Commands.DocenteC
 {
     public class CrearDocenteCommand : IRequest<DocenteDto>
     {
-        public int Id { get; set; }
+ 
         public int IdentificacionDocente { get; set; }
         public string TipoIdentificacionDocente { get; set; } = null!;
 
@@ -75,7 +75,7 @@ namespace RETO.CodeSkills.Application.Commands.DocenteC
 
 
             var docente = _mapper.Map<Docente>(request);
-            var docenteExiste = await _context.Docentes.FirstOrDefaultAsync(x => x.IdentificacionDocente == request.IdentificacionDocente && x.Id == request.Id);
+            var docenteExiste = await _context.Docentes.FirstOrDefaultAsync(x => x.IdentificacionDocente == request.IdentificacionDocente );
             if (docenteExiste != null)
             {
                 throw new Exception("El docente ya esta registrado");

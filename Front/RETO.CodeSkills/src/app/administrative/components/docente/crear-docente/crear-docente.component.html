@@ -43,7 +43,7 @@
             <input id="correoElectronicoDocente" type="text" pInputText formControlName="correoElectronicoDocente">
             <small
               *ngIf="docenteForm?.get('correoElectronicoDocente')?.invalid && docenteForm?.get('correoElectronicoDocente')?.touched"
-              class="p-error">El Correo Electrónico del Docente es requerido.</small>
+              class="p-error">El Correo Electrónico debe ser valido.</small>
           </div>
           <br>
           <div class="p-field p-col">
@@ -51,7 +51,7 @@
             <input id="telefonoCelularDocente" type="text" pInputText formControlName="telefonoCelularDocente">
             <small
               *ngIf="docenteForm?.get('telefonoCelularDocente')?.invalid && docenteForm?.get('telefonoCelularDocente')?.touched"
-              class="p-error">El número de teléfono del celular es requerido.</small>
+              class="p-error">El campo es requerido, debe contener 10 numeros.</small>
           </div>
           <br>
           <div class="p-field p-col">
