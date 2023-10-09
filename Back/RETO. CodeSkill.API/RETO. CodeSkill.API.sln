@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RETO. CodeSkill.API", "RETO. CodeSkill.API\RETO. CodeSkill.API.csproj", "{F671C516-2217-40BF-B0EC-62E3CC4C9020}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{361B9B00-9408-4C3F-A3F1-DCE4AD176FA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{11411A96-3652-4DDB-B602-167185539F31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{20E21149-7F0D-4FDB-977A-BFA3151269D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RETO.CodeSkills.Application", "RETO.CodeSkills.Application\RETO.CodeSkills.Application.csproj", "{D8C95C12-00B5-4A5B-9781-374985BC611C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RETO.CodeSkills.Domain", "RETO.CodeSkills.Domain\RETO.CodeSkills.Domain.csproj", "{66D5F941-F494-4FB7-9C8B-9694D8CB4CC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RETO.CodeSkills.Infrastructure", "RETO.CodeSkills.Infrastructure\RETO.CodeSkills.Infrastructure.csproj", "{31A83A2E-D2D1-456D-B576-54536A271E0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F671C516-2217-40BF-B0EC-62E3CC4C9020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F671C516-2217-40BF-B0EC-62E3CC4C9020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F671C516-2217-40BF-B0EC-62E3CC4C9020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F671C516-2217-40BF-B0EC-62E3CC4C9020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C95C12-00B5-4A5B-9781-374985BC611C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C95C12-00B5-4A5B-9781-374985BC611C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C95C12-00B5-4A5B-9781-374985BC611C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C95C12-00B5-4A5B-9781-374985BC611C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66D5F941-F494-4FB7-9C8B-9694D8CB4CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D5F941-F494-4FB7-9C8B-9694D8CB4CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D5F941-F494-4FB7-9C8B-9694D8CB4CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D5F941-F494-4FB7-9C8B-9694D8CB4CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A83A2E-D2D1-456D-B576-54536A271E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A83A2E-D2D1-456D-B576-54536A271E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A83A2E-D2D1-456D-B576-54536A271E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A83A2E-D2D1-456D-B576-54536A271E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F671C516-2217-40BF-B0EC-62E3CC4C9020} = {11411A96-3652-4DDB-B602-167185539F31}
+		{D8C95C12-00B5-4A5B-9781-374985BC611C} = {361B9B00-9408-4C3F-A3F1-DCE4AD176FA6}
+		{66D5F941-F494-4FB7-9C8B-9694D8CB4CC8} = {361B9B00-9408-4C3F-A3F1-DCE4AD176FA6}
+		{31A83A2E-D2D1-456D-B576-54536A271E0D} = {20E21149-7F0D-4FDB-977A-BFA3151269D1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9FAD09C6-DF6A-4302-81A9-4CCCA807AA7E}
+	EndGlobalSection
+EndGlobal

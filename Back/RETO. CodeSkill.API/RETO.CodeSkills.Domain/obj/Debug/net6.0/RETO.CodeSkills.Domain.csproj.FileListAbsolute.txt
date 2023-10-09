@@ -1,0 +1,11 @@
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\bin\Debug\net6.0\RETO.CodeSkills.Domain.deps.json
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\bin\Debug\net6.0\RETO.CodeSkills.Domain.dll
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\bin\Debug\net6.0\RETO.CodeSkills.Domain.pdb
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\obj\Debug\net6.0\RETO.CodeSkills.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\obj\Debug\net6.0\RETO.CodeSkills.Domain.AssemblyInfoInputs.cache
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\obj\Debug\net6.0\RETO.CodeSkills.Domain.AssemblyInfo.cs
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\obj\Debug\net6.0\RETO.CodeSkills.Domain.csproj.CoreCompileInputs.cache
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\obj\Debug\net6.0\RETO.CodeSkills.Domain.dll
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\obj\Debug\net6.0\refint\RETO.CodeSkills.Domain.dll
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\obj\Debug\net6.0\RETO.CodeSkills.Domain.pdb
+C:\Users\helu1\OneDrive\Escritorio\retoCodeSkills\RetoCodeSkills\Back\RETO. CodeSkill.API\RETO.CodeSkills.Domain\obj\Debug\net6.0\ref\RETO.CodeSkills.Domain.dll
