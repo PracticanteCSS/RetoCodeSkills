@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoginUsuarioService } from 'src/app/administrative/services/login-usuario.service';
+import ValidateForm from '../../../../helpers/validationform';
 
 @Component({
   selector: 'app-signup',
@@ -39,7 +40,7 @@ export class SignupComponent implements OnInit{
       })
       console.log(this.signUpForm.value)
     }else{
-      ValidateForm.validateAllFormFileds(this.signUpForm)
+      ValidateForm.validateAllFormFields(this.signUpForm);
     }
   }
 
