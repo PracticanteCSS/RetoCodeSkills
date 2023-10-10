@@ -3,20 +3,20 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoginUsuarioService } from 'src/app/administrative/services/login-usuario.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css']
 })
-export class LoginComponent implements OnInit {
+export class SignupComponent implements OnInit{
+
   type: string = "password";
   isText: boolean = false;
   eyeIcon : string = "fa-eye-slash";
-  loginForm!: FormGroup;
+  signUpForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private auth : LoginUsuarioService) {}
-
+  constructor(private fb : FormBuilder, private auth : LoginUsuarioService){}
   ngOnInit(): void {
-    this.loginForm = this.fb.group({
+    this.signUpForm = this.fb.group({
       nombreLoginUsuario: ['', Validators.required],
       contraseñaLoginUsuario: ['', Validators.required]
     })
@@ -27,17 +27,20 @@ export class LoginComponent implements OnInit {
     this.isText ? this.type = "text" : this.type = "password";
   }
 
-  onLogin(){
-    if (this.loginForm.valid){
-      console.log(this.loginForm.value)
-      this.auth.login(this.loginForm.value).subscribe({
-        next:(respuesta)=>{
+  onSignUp(){
+    if(this.signUpForm.valid){
+      this.auth.signUp(this.signUpForm.value).subscribe({
+        next:(respuesta=>{
           alert(respuesta)
-        },
-        error: (err)=>{
-          alert(err?.error.message)
-        }
+        }),
+        error:(err=>{
+          alert(err.error.message)
+        })
       })
+      console.log(this.signUpForm.value)
+    }else{
+      ValidateForm.validateAllFormFileds(this.signUpForm)
     }
   }
+
 }

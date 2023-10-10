@@ -19,6 +19,7 @@ import { NgSelectModule } from "@ng-select/ng-select";
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { CheckboxModule } from 'primeng/checkbox';
 import { LoginComponent } from './components/login-usuario/login/login.component';
+import { SignupComponent } from './components/login-usuario/signup/signup.component';
 
 
 
@@ -27,7 +28,8 @@ import { LoginComponent } from './components/login-usuario/login/login.component
   declarations: [
     CrearDocenteComponent,
     ListarDocenteComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     CommonModule,
