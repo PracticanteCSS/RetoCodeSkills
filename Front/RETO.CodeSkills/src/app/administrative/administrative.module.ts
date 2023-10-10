@@ -18,6 +18,7 @@ import { MessagesModule } from "primeng/messages";
 import { NgSelectModule } from "@ng-select/ng-select";
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { CheckboxModule } from 'primeng/checkbox';
+import { LoginComponent } from './components/login-usuario/login/login.component';
 
 
 
@@ -25,7 +26,8 @@ import { CheckboxModule } from 'primeng/checkbox';
 @NgModule({
   declarations: [
     CrearDocenteComponent,
-    ListarDocenteComponent
+    ListarDocenteComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,

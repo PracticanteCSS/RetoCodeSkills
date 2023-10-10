@@ -31,5 +31,10 @@ namespace RETO.CodeSkills.Infrastructure.Persistence.DbContexts
             return await base.SaveChangesAsync(cancellationToken);
         }
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public Task SaveChangesAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

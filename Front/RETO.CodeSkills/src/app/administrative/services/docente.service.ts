@@ -5,15 +5,11 @@ import { Docente } from '../models/docente';
 import { environment } from 'src/environments/environment';
 import { Observable, Subject } from 'rxjs';
 
-
-
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DocenteService {
-
-  baseUrlApi: string="";
+  baseUrlApi: string = '';
 
   constructor(private http: HttpClient) {
     this.baseUrlApi = environment.baseUrlApi;
@@ -25,14 +21,13 @@ export class DocenteService {
     );
   }
 
-
   getListaDocentesById(id: number): Observable<Docente> {
     return this.http.get<Docente>(
       `${this.baseUrlApi}/Docente/ConsultarDocente/${id}`
-      );
+    );
   }
 
-      postDocente(docenteForm: Docente): Observable<Docente> {
+  postDocente(docenteForm: Docente): Observable<Docente> {
     return this.http.post<Docente>(
       `${this.baseUrlApi}/Docente/CrearDocente`,
       docenteForm
@@ -43,7 +38,7 @@ export class DocenteService {
     return this.http.put<Docente>(
       `${this.baseUrlApi}/Docente/EditarDocente`,
       docenteForm
-      );
+    );
   }
 
   deleteDocente(id: number): Observable<any> {
@@ -51,6 +46,4 @@ export class DocenteService {
       `${this.baseUrlApi}/Docente/EliminarDocente?id=${id}`
     );
   }
-
-
 }

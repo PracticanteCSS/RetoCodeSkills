@@ -13,6 +13,6 @@ namespace RETO.CodeSkills.Application.Interfaces
         DbSet<LoginUsuario> LoginUsuarios { get; set; }
         
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
-        DatabaseFacade Database { get; }
+      
     }
 }

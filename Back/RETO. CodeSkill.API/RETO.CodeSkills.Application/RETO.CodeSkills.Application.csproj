@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\LoginC\" />
     <Folder Include="Interfaces\" />
   </ItemGroup>
 
