@@ -9,13 +9,13 @@
                   <div class="panel-body p-3">
                       <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
                           <div class="form-group pt-3">
-                              <div class="input-field" [class.error]="loginForm.controls['nombreLoginUsuario'].dirty && loginForm.hasError('required','nombreLoginUsuario')"> <span class="fa fa-user p-2"></span> <input formControlName="nombreLoginUsuario" type="text" placeholder="Nombre de Usuario" required> </div>
+                              <div class="input-field" [class.error]="loginForm.controls['nombreUsuario'].dirty && loginForm.hasError('required','nombreUsuario')"> <span class="fa fa-user p-2"></span> <input formControlName="nombreUsuario" type="text" placeholder="Nombre de Usuario" required> </div>
                           </div>
-                          <small *ngIf="loginForm.controls['nombreLoginUsuario'].dirty && loginForm.hasError('required','nombreLoginUsuario')" class="text-danger">*Username is required*</small>
+                          <small *ngIf="loginForm.controls['nombreUsuario'].dirty && loginForm.hasError('required','nombreUsuario')" class="text-danger">*Username is required*</small>
                           <div class="form-group pt-3">
-                              <div class="input-field" [class.error]="loginForm.controls['contraseñaLoginUsuario'].dirty && loginForm.hasError('required','contraseñaLoginUsuario')"> <span class="fa fa-lock px-2"></span> <input formControlName="contraseñaLoginUsuario" [type]="type" placeholder="Contraseña"> <button type="button" (click)="hideShowPass()" class="bg-white text-muted"> <span class="fa {{eyeIcon}}"></span> </button>                                    </div>
+                              <div class="input-field" [class.error]="loginForm.controls['contraseñaUsuario'].dirty && loginForm.hasError('required','contraseñaUsuario')"> <span class="fa fa-lock px-2"></span> <input formControlName="contraseñaUsuario" [type]="type" placeholder="Contraseña"> <button type="button" (click)="hideShowPass()" class="bg-white text-muted"> <span class="fa {{eyeIcon}}"></span> </button>                                    </div>
                           </div>
-                          <small *ngIf="loginForm.controls['contraseñaLoginUsuario'].dirty && loginForm.hasError('required','contraseñaLoginUsuario')" class="text-danger">*Password is required*</small>
+                          <small *ngIf="loginForm.controls['contraseñaUsuario'].dirty && loginForm.hasError('required','contraseñaUsuario')" class="text-danger">*Password is required*</small>
                           <div class="form-inline fr mt-4"> <a id="forgot" data-bs-toggle="modal" data-bs-target="#exampleModal" class="font-weight-bold">Forgot password?</a> </div>
                           <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Login</button>
                           <div class="text-center pt-4 text-muted">Don't have an account? <a id="forgot" href="#" routerLink="/signup">Sign up</a> </div>

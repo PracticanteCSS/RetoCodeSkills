@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent implements OnInit{
 
-  type: string = "contraseñaLoginUsuario";
+  type: string = "password";
   isText: boolean = false;
   eyeIcon : string = "fa-eye-slash";
   signUpForm!: FormGroup;
@@ -19,14 +19,14 @@ export class SignupComponent implements OnInit{
   constructor(private fb : FormBuilder, private auth : LoginUsuarioService, private router : Router){}
   ngOnInit(): void {
     this.signUpForm = this.fb.group({
-      nombreLoginUsuario: ['', Validators.required],
-      contraseñaLoginUsuario: ['', Validators.required]
+      nombreUsuario: ['', Validators.required],
+      contraseñaUsuario: ['', Validators.required]
     })
   }
   hideShowPass(){
     this.isText = !this.isText;
     this.isText ? this.eyeIcon = "fa-eye" : this.eyeIcon = "fa-eye-slash";
-    this.isText ? this.type = "text" : this.type = "contraseñaLoginUsuario";
+    this.isText ? this.type = "text" : this.type = "password";
   }
 
   onSignUp(){

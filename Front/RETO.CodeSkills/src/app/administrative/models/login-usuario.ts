@@ -1,6 +1,6 @@
 export interface LoginUsuario
 {
-  idLoginUsuario: number,
-  nombreLoginUsuario: string,
-  contraseñaLoginUsuario: string
+  idUsuario: number,
+  nombreUsuario: string,
+  contraseñaUsuario: string
 }
