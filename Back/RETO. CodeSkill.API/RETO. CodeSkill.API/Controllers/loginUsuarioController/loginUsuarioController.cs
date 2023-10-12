@@ -57,7 +57,7 @@ namespace RETO._CodeSkill.API.Controllers.loginUsuarioController
         {
             if (request == null)
             {
-                return BadRequest();
+                return BadRequest(new { message = "No se encontró registro"});
             }
             var login = await _context.LoginUsuarios.FirstOrDefaultAsync(x => x.NombreUsuario == request.NombreUsuario && x.ContraseñaUsuario == request.ContraseñaUsuario);
             if (login == null)

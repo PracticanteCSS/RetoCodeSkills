@@ -20,7 +20,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("UIPolicy",
-        policy => policy.AllowAnyHeader()
+        policy => policy
+        .AllowAnyHeader()
         .AllowAnyMethod()
         .AllowAnyOrigin());
 });
@@ -37,8 +38,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("UIPolicy");
 
+
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

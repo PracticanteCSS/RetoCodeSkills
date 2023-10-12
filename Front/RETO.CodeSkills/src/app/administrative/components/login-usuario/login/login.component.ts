@@ -10,7 +10,7 @@ import { LoginUsuarioService } from 'src/app/administrative/services/login-usuar
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  type: string = "password";
+  type: string = "contraseñaLoginUsuario";
   isText: boolean = false;
   eyeIcon : string = "fa-eye-slash";
   loginForm!: FormGroup;
@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   hideShowPass(){
     this.isText = !this.isText;
     this.isText ? this.eyeIcon = "fa-eye" : this.eyeIcon = "fa-eye-slash";
-    this.isText ? this.type = "text" : this.type = "password";
+    this.isText ? this.type = "text" : this.type = "contraseñaLoginUsuario";
   }
 
   onLogin(){
